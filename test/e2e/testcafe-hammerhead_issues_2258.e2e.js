@@ -10,7 +10,8 @@ const fetchRequestClientFunction = ClientFunction(
         method,
         headers: new Headers({
           accept: 'application/json',
-          'Content-Type': 'application/x-www-form-urlencoded'
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'access-control-allow-origin': '*'
         })
       })
       .then(httpResponse => {
